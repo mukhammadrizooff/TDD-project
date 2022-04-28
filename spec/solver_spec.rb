@@ -24,7 +24,7 @@ describe Solver do
     end
   end
 
-context 'Method Reverse' do
+  context 'Method Reverse' do
     it 'If the input parameter is not a string, it returns an argument error' do
       expect { @solver.reverse(15) }.to raise_exception ArgumentError
     end

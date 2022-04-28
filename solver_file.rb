@@ -12,5 +12,13 @@ class Solver
     str.reverse
   end
 
-  
+  def fizzbuzz(num)
+    raise ArgumentError unless num.is_a?(Integer)
+    return 'fizzbuzz' if (num % 15).zero?
+    return 'buzz' if (num % 5).zero?
+    return 'fizz' if (num % 3).zero?
+
+    num.to_s
+  end
+
 end
